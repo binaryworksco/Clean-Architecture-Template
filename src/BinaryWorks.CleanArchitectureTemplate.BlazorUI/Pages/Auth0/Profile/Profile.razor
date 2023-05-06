@@ -1,0 +1,46 @@
+﻿@page "/Auth0/Profile"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthState
+
+@attribute [Authorize]
+
+<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <li class="col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow">
+    <div class="flex w-full items-center justify-between space-x-6 p-6">
+      <div class="flex-1 truncate">
+        <div class="flex items-center space-x-3">
+          <h3 class="truncate text-sm font-medium text-gray-900">@_username</h3>
+          @* <span class="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">Admin</span> *@
+        </div>
+        <p class="mt-1 truncate text-sm text-gray-500">@_email</p>
+      </div>
+      <img class="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300" src="@_picture" alt="">
+    </div>
+  </li>
+</ul>
+
+@code {
+  private string _username = string.Empty;
+  private string _email = string.Empty;
+  private string _picture = string.Empty;
+  
+  protected override async Task OnInitializedAsync()
+  {
+    var state = await AuthState.GetAuthenticationStateAsync();
+
+    _username = state.User.Identity?.Name?? string.Empty;
+    
+    _email = state.User.Claims
+      .Where(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"))
+      .Select(c => c.Value)
+      .FirstOrDefault() ?? string.Empty;
+    
+    _picture = state.User.Claims
+      .Where(c => c.Type.Equals("picture"))
+      .Select(c => c.Value)
+      .FirstOrDefault() ?? string.Empty;
+    
+    await base.OnInitializedAsync();
+  } 
+}

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B9904FFD-D38F-477A-8AEA-4C2160835EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryWorks.CleanArchitectureTemplate.Domain", "src\BinaryWorks.CleanArchitectureTemplate.Domain\BinaryWorks.CleanArchitectureTemplate.Domain.csproj", "{B257C142-121E-4C88-9884-3C6B980A94E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryWorks.CleanArchitectureTemplate.Application", "src\BinaryWorks.CleanArchitectureTemplate.Application\BinaryWorks.CleanArchitectureTemplate.Application.csproj", "{5F9D67BA-5A9D-44C5-938A-5C7E193165D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryWorks.CleanArchitectureTemplate.Infrastructure", "src\BinaryWorks.CleanArchitectureTemplate.Infrastructure\BinaryWorks.CleanArchitectureTemplate.Infrastructure.csproj", "{C844DEEE-6629-406A-836C-1B24D8C16A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryWorks.CleanArchitectureTemplate.BlazorUI", "src\BinaryWorks.CleanArchitectureTemplate.BlazorUI\BinaryWorks.CleanArchitectureTemplate.BlazorUI.csproj", "{8C14B6FD-98F4-4C6E-BB73-AFFB5DDA0246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryWorks.CleanArchitectureTemplate.WebAPI", "src\BinaryWorks.CleanArchitectureTemplate.WebAPI\BinaryWorks.CleanArchitectureTemplate.WebAPI.csproj", "{6F8786C7-D3DB-43A6-A002-FEC7521E150A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B257C142-121E-4C88-9884-3C6B980A94E2} = {B9904FFD-D38F-477A-8AEA-4C2160835EBE}
+		{5F9D67BA-5A9D-44C5-938A-5C7E193165D1} = {B9904FFD-D38F-477A-8AEA-4C2160835EBE}
+		{C844DEEE-6629-406A-836C-1B24D8C16A21} = {B9904FFD-D38F-477A-8AEA-4C2160835EBE}
+		{8C14B6FD-98F4-4C6E-BB73-AFFB5DDA0246} = {B9904FFD-D38F-477A-8AEA-4C2160835EBE}
+		{6F8786C7-D3DB-43A6-A002-FEC7521E150A} = {B9904FFD-D38F-477A-8AEA-4C2160835EBE}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B257C142-121E-4C88-9884-3C6B980A94E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B257C142-121E-4C88-9884-3C6B980A94E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B257C142-121E-4C88-9884-3C6B980A94E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B257C142-121E-4C88-9884-3C6B980A94E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9D67BA-5A9D-44C5-938A-5C7E193165D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9D67BA-5A9D-44C5-938A-5C7E193165D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9D67BA-5A9D-44C5-938A-5C7E193165D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9D67BA-5A9D-44C5-938A-5C7E193165D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C844DEEE-6629-406A-836C-1B24D8C16A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C844DEEE-6629-406A-836C-1B24D8C16A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C844DEEE-6629-406A-836C-1B24D8C16A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C844DEEE-6629-406A-836C-1B24D8C16A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C14B6FD-98F4-4C6E-BB73-AFFB5DDA0246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C14B6FD-98F4-4C6E-BB73-AFFB5DDA0246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C14B6FD-98F4-4C6E-BB73-AFFB5DDA0246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C14B6FD-98F4-4C6E-BB73-AFFB5DDA0246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8786C7-D3DB-43A6-A002-FEC7521E150A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8786C7-D3DB-43A6-A002-FEC7521E150A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8786C7-D3DB-43A6-A002-FEC7521E150A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8786C7-D3DB-43A6-A002-FEC7521E150A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

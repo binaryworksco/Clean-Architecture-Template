@@ -1,0 +1,13 @@
+{
+  "author": "Mathew Taylor",
+  "classifications": [ "Blazor","Web","ASP.NET","Clean Architecture" ],
+  "identity": "BinaryWorks.CleanArchitectureTemplate",
+  "name": "Binary Works - Clean Architecture Template",
+  "shortName": "bw-clean-arch",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BinaryWorks.CleanArchitectureTemplate",
+  "preferNameDirectory": true
+}

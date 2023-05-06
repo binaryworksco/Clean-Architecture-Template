@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>BinaryWorks.CleanArchitectureTemplate</id>
+    <title>ASP.NET Core Clean Architecture Solution</title>
+    <version>1.0.0</version>
+    <authors>Mathew Taylor</authors>
+    <description>
+      Clean Architecture Solution Template for .NET 7, C# 11.
+    </description>
+    <language>en-US</language>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/binaryworksco/Clean-Architecture-Template</projectUrl>
+    <releaseNotes>initial release</releaseNotes>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>Blazor "Web API" ASP.NET "Clean Architecture" MediatR Serilog</tags>
+  </metadata>
+  <files>
+    <file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.git\**;**\.github\**;**\*.user;**\.vs\**;**\.vscode\**;**\.idea\**" />
+    <file src="README.md" />
+  </files>
+</package>
